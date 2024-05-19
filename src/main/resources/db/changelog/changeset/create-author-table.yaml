@@ -1,0 +1,15 @@
+databaseChangeLog:
+  
+-dataChangeLog:
+   -changeSet:
+     id : create-author
+     author: Arsen
+     changes:
+        -createTable:
+           tableName: author
+           columns:
+             - column: id
+               type: bigint
+               autoIncrement: true
+               constraints:
+                  primaryKey: true
