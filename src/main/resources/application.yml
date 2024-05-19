@@ -1,0 +1,15 @@
+application:
+  kafka:
+    topic: "topicCreate"
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_RESERVATION_BOOTSTRAP_SERVERS:localhost:9092}
+      client-id: "demo-producer"
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+server:
+  port: 27674
